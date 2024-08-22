@@ -1,0 +1,13 @@
+<form (ngSubmit)="onSubmit()" class="add-task-form">
+  <div class="form-group">
+    <input [(ngModel)]="title" name="title" type="text" placeholder="What needs to be done?" required>
+  </div>
+  <div class="form-group form-actions">
+    <input [(ngModel)]="date" name="date" type="date" required>
+    <label class="reminder-label">
+      <input [(ngModel)]="reminder" name="reminder" type="checkbox">
+      <span class="reminder-text">Reminder</span>
+    </label>
+    <button type="submit" class="btn btn-add">Add Task</button>
+  </div>
+</form>
